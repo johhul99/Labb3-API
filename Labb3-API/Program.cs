@@ -38,7 +38,7 @@ namespace Labb3_API
                 return Results.Ok(CVDB);
             });
 
-            app.MapPut("/technology/{id}", async (string id, string name, float yearsOfExperience, string skillLevel) =>
+            app.MapPut("/technology/{id}", async (string id, string name, int yearsOfExperience, string skillLevel) =>
             {
                 var CVDB = await db.UpdateTechnology("Technologies", id, name, yearsOfExperience, skillLevel);
                 return Results.Ok(CVDB);
