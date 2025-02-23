@@ -21,7 +21,7 @@ namespace Labb3_API.Data
             return collection.AsQueryable().ToList();
         }
 
-        public async Task<List<Technology>> UpdateTechnology(string table, string id, string name, float yearsOfExperience, string skillLevel)
+        public async Task<List<Technology>> UpdateTechnology(string table, string id, string name, int yearsOfExperience, string skillLevel)
         {
             var collection = db.GetCollection<Technology>(table);
             var technology = await collection.Find(t => t.Id == id).FirstOrDefaultAsync();

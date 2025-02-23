@@ -8,7 +8,7 @@ namespace Labb3_API.Models
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
         public string Id { get; set; }
         public string Name { get; set; }
-        public float YearsOfExperience { get; set; }
+        public int YearsOfExperience { get; set; }
         public string SkillLevel { get; set; }
     }
 }
