@@ -1,0 +1,25 @@
+# Ignorera bin- och obj-mappar (byggfiler)
+bin/
+obj/
+
+# Ignorera användarspecifika filer
+*.user
+*.suo
+*.vsp
+*.vspx
+*.pidb
+*.sln.docstates
+
+# Ignorera loggfiler och IDE-cachefiler
+*.log
+.vscode/
+*.vs/
+*.DS_Store
+
+# Ignorera känsliga inställningar och konfigurationsfiler
+appsettings.json
+appsettings.*.json
+
+# Ignore Visual Studio cache
+.vs/
+
